@@ -1,22 +1,22 @@
-# idm250/index.php
-# idm250/license.txt
-# idm250/readme.html
-# idm250/wp-blog-header.php
-# idm250/wp-comments-post.php
-# idm250/wp-cron.php
-# idm250/wp-links-opml.php
-# idm250/wp-load.php
-# idm250/wp-mail.php
-# idm250/wp-settings.php
-# idm250/wp-trackback.php
-# idm250/xmlrpc.php
-# *idm250/wp-admin
-# *idm250/wp-includes
-# *idm250/wp-content/plugins
-# *idm250/wp-content/uploads
-# *idm250/wp-content/themes/twentytwentyfour
-# *idm250/wp-content/themes/twentytwentythree
-# *idm250/wp-content/themes/twentytwentytwo
+idm250/index.php
+idm250/license.txt
+idm250/readme.html
+idm250/wp-blog-header.php
+idm250/wp-comments-post.php
+idm250/wp-cron.php
+idm250/wp-links-opml.php
+idm250/wp-load.php
+idm250/wp-mail.php
+idm250/wp-settings.php
+idm250/wp-trackback.php
+idm250/xmlrpc.php
+*idm250/wp-admin
+*idm250/wp-includes
+*idm250/wp-content/plugins
+*idm250/wp-content/uploads
+*idm250/wp-content/themes/twentytwentyfour
+*idm250/wp-content/themes/twentytwentythree
+*idm250/wp-content/themes/twentytwentytwo
 
 # Repo Specific
 .vscode
@@ -41,22 +41,6 @@
 # git rm --cached
 # -----------------------------------------------------------------
 
-# ignore everything in the root except the "wp-content" directory.
-/*
-!wp-content/
-
-# ignore everything in the "wp-content" directory, except:
-# mu-plugins, plugins, and themes directories
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
-
-# ignore all mu-plugins, plugins, and themes
-# unless explicitly whitelisted at the end of this file
-wp-content/mu-plugins/*
-wp-content/plugins/*
-wp-content/themes/*
 
 # ignore all files starting with . or ~
 .*
@@ -96,29 +80,3 @@ wp-content/themes/*
 !README.md
 !CHANGELOG.md
 !composer.json
-
-# track favicon files, if they exist
-!android-chrome-*.png
-!apple-touch-icon*.png
-!browserconfig.xml
-!favicon*.png
-!favicon*.ico
-!manifest.json
-!mstile-*.png
-!safari-pinned-tab.svg
-!site.webmanifest
-
-# track these mu-plugins, plugins, and themes
-# add your own entries here
-!_instructor_materials
-!.github
-!wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
-!wp-content/themes/idm250-theme-01/
-!wp-content/themes/portfolio-2023/
-
-*wp-content/plugins
-*wp-content/uploads
-!wp-content/themes/twentytwentyfour
-!wp-content/themes/twentytwentythree
-!wp-content/themes/twentytwentytwo
