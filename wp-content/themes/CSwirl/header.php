@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <title>Document</title> --> 
+    <title> <?php bloginfo('name');?> <?php wp_title();?></title>
     
     <?php wp_head(); ?>
 </head>
 
 
-<body>
-    <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-        </nav>
-    </header>
+<body  <?php body_class(); ?> >
+    <?php wp_body_open(); ?>
+    <?php get_template_part('components/header'); ?>
