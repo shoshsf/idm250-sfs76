@@ -3,8 +3,8 @@
     list-style-type:none;
     /* border: 1px solid red; */
     
-
 }
+
 html {
     background-color: #F8EEE4;
     width: 100%;
@@ -20,8 +20,15 @@ html {
     font-weight: normal;
     font-style: normal;
 
-    font-family: Baloo Regular;
+    font-family: 'Baloo Regular';
     src:'/dist/fonts/Baloo2-Regular.woff2' , format('woff2');
+    
+    font-family: 'Arial Narrow';
+    src: url('ArialNarrow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    
 }
 
   /*Fonts End*/ 
@@ -31,7 +38,7 @@ h1{
     font-family: 'Bilbo';
     font-size: 210px;
     color: #EBC089;
-    text-shadow: -10px 5px  #331200;
+    text-shadow: -10px 5px  #3F1300;
     line-height: 268px;
     letter-spacing: 3px;
     margin: 0;
@@ -43,35 +50,41 @@ h2{
     font-size: 27px;
     font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
+    color: #692e14;    
 }
 
 h3{
     font-size: 20px;
     font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: #692e14; 
 }
 
 h4{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
- 
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #692e14;  
 }
 
 h5{
     font-size: 18px;
     font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: #692e14; 
 }
 
 h6{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 p{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    color:  #3F1300;
+    line-height: 24px;
 }
 
 
@@ -97,8 +110,12 @@ footer{
     color: #EBC089;
 }
 
-.fontcolor_331200{
-    color: #331200;
+.fontcolor_692E14{
+    color: #692E14;
+}
+
+.fontcolor_3F1300{
+    color: #3F1300;
 }
 
 
@@ -120,7 +137,7 @@ footer{
 
 .menu-item{
     padding: 0 45px;  
-    /* background-color: #331200b0;   */
+    /* background-color: #3F1300b0;   */
 }
 
 .menu-item a{
@@ -150,7 +167,7 @@ a:hover{
 }
 
 .homeBtn a{
-    background-color: #331200;
+    background-color: #692E14;
     width: 313px;
     height: 65px;
     display: flex;
@@ -168,17 +185,247 @@ a:hover{
 
 /* ---------------- */
 
+/* Blog Post Inner Page*/
+
+.blogInner-content{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: #f2d7b767;
+    border-radius: 24px;
+    padding-bottom: 25px;
+    box-shadow: #692E14 0px 0px 10px;
+}
+
+.blogInner-cover{
+    border-radius: 24px 24px 0 0 ;
+}
+.blogInner-coverText{
+    padding: 0 5px;
+}
+
+.blogInner-text{
+    margin: 10px;
+}
+
+.blogInner-content h3, p{
+    padding-left: 20px;
+
+}
+
+.blogInner-content h5{
+    margin: 0;
+}
+
+.blogInner-content a{
+    color: #692E14;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blogInner-content a:hover{
+    cursor: pointer;
+}
+
+.blogInner-subtopic{
+    margin-left: 50px;
+}
+
+.blogInner-subtopic ul > li{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #3F1300;
+    list-style-type: circle;
+    line-height: 24px;
+}
+
+.blogInner-subtopic ol > li {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #3F1300;
+    list-style-type: decimal;
+    line-height: 24px;
+}
+
+/* .backToBlogBtn{
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+    background-color: #F2D7B7;
+    border-radius: 15px;
+    border: 1px solid #3F1300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.backToBlogBtn a {
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #692e14;  
+    padding: 10px;
+
+}
+
+.backToBlogBtn:hover {
+    border: 2px solid #3F1300;
+    box-shadow: #692E14 0px 0px 5px;
+} */
 
 
 
-@media only screen and (min-width: 300px) and (max-width: 930px) {
+/* ------------------- */
+
+@media only screen and (min-width: 630px) and (max-width: 930px) {
+    
+    h1{
+        font-family: 'Bilbo';
+        font-size: 130px;
+        line-height: 150px;
+        color: #EBC089;
+        text-shadow: -10px 5px  #3F1300;
+        letter-spacing: 3px;
+        text-align: center;
+        background-image: url("../imgs/TopSectBkgd.png");
+        max-width: 100%;
+        padding: 0 25px;
+        height: max-content;
+        
+    }
+       
+    h2{
+        font-size: 22px;
+        font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    h3{
+        font-size: 18px;
+        font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    h4{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+     
+    }
+    
+    h5{
+        font-size: 16px;
+        font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    h6{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    p{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header{
+        margin:0;
+        padding: 10px;  
+    }
+     
+    #menu-primary-2024-menu, #menu-footer-menu{
+        padding: 0; 
+        margin: 0;
+    }
+    .menu-primary-2024-menu-container{
+        padding: 0 20px 0; 
+    }
+    
+
+    footer{
+        /* background-color: #6A2E14; */
+        padding: 15px 10px 0; 
+    }
+
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 15px;
+    }
+
+    .menu-item{
+        padding: 15px 10px;
+    }
+    .menu-item a{
+        padding:15px;
+
+    }
+    
+    .menu-item a:hover{
+        cursor:  pointer;
+        text-decoration: none;
+    }
+    /* 404 ERROR STYLES */
+    #errorCharacter{
+        width: 500px;
+        position: center;
+    }
+
+    .errorContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0  35px;
+        text-align: center;
+    } 
+    /* ---------------- */
+
+    /* Blog Post Inner Page*/
+    .blogInner-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .blogInner-coverText{
+        padding: 0 15px;
+    }
+
+    
+    .blogInner-subtopic{
+        margin-left: 50px;
+    }
+    
+    .blogInner-subtopic ul > li{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .blogInner-subtopic ol > li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    /* ------------------- */
+        
+  }
+  
+@media only screen and (min-width: 300px) and (max-width: 630px) {
     
     h1{
         font-family: 'Bilbo';
         font-size: 72px;
         line-height: 110px;
         color: #EBC089;
-        text-shadow: -10px 5px  #331200;
+        text-shadow: -10px 5px  #3F1300;
         letter-spacing: 3px;
         text-align: center;
         background-image: url("../imgs/TopSectBkgd.png");
@@ -190,7 +437,7 @@ a:hover{
 
        
     h2{
-        font-size: 22px;
+        font-size: 20px;
         font-family: 'Baloo Regular', Arial, Helvetica, sans-serif;
         font-weight: bold;
         
@@ -280,40 +527,40 @@ a:hover{
         text-align: center;
     } 
     /* ---------------- */
-        
-  }
 
-  @media only screen and (min-width: 630px) and (max-width: 930px) {
+    /* Blog Post Inner Page*/
+    .blogInner-content{
+        margin-top: 45px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* UPPER STUFF BEING ADDED BELOW */
+    .blogInner-text{
+        margin: 5px 15px 5px 0 ;
+        
+    }
     
-    h1{
-        font-family: 'Bilbo';
-        font-size: 130px;
-        line-height: 150px;
-        color: #EBC089;
-        text-shadow: -10px 5px  #331200;
-        letter-spacing: 3px;
-        text-align: center;
-        background-image: url("../imgs/TopSectBkgd.png");
-        max-width: 100%;
-        padding: 0 25px;
-        height: max-content;
-        
+    .blogInner-content h3, p{
+        padding-left: 20px;
+    
     }
-
-    /* 404 ERROR STYLES */
-    #errorCharacter{
-        width: 500px;
-        position: center;
+    
+    .blogInner-content h5{
+        margin: 0;
     }
+     
+    
+    .blogInner-subtopic ul > li{
+        font-size: 16px;
+    }
+    
+    .blogInner-subtopic ol > li {
+        font-size: 16px;
+    }
+    
 
-    .errorContent{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0  35px;
-        text-align: center;
-    } 
-    /* ---------------- */
-        
+    
+    /* ------------------- */
+    
   }

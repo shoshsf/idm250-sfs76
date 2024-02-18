@@ -31,4 +31,30 @@ function register_theme_menus(){
     ]);
 }
 
-add_action( 'init' , 'register_theme_menus'); 
+// Enable featured images
+add_theme_support('post-thumbnails');
+
+
+// enable excerpt
+add_post_type_support('page', 'excerpt');
+
+
+// create custom post type called portfolio
+function create_custom_post_type()
+{
+    $post_type_name = 'portfolio';
+    $post_type_options = [
+        'labels' => [
+            'name' => __('Projects'),
+            'singular_name' => __('Project'),
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-portfolio',
+        'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'rewrite' => ['slug' => 'portfolio'],
+        'show_in_rest' => true,
+
+    ];
+}
+

@@ -3,7 +3,7 @@
 
 <div class="errorContent">
     <img src="wp-content\themes\CSwirl\dist\imgs\404Page\errorCharacter.png" alt="#" id="errorCharacter">
-    <h2 class="errorContentText fontcolor_331200" >"Uh-oh! Hot dog, you've wandered into the land of lost links!"</h2>
+    <h2 class="errorContentText" >"Uh-oh! Hot dog, you've wandered into the land of lost links!"</h2>
 
     <h3 class="homeBtn">
         <?php wp_nav_menu([
