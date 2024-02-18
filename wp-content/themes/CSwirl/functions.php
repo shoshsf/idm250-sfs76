@@ -42,19 +42,36 @@ add_post_type_support('page', 'excerpt');
 // create custom post type called portfolio
 function create_custom_post_type()
 {
-    $post_type_name = 'portfolio';
+    // $post_type_name = 'portfolio';
+    // $post_type_options = [
+    //     'labels' => [
+    //         'name' => __('Projects'),
+    //         'singular_name' => __('Project'),
+    //     ],
+    //     'public' => true,
+    //     'has_archive' => true,
+    //     'menu_icon' => 'dashicons-portfolio',
+    //     'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+    //     'rewrite' => ['slug' => 'portfolio'],
+    //     'show_in_rest' => true,
+
+    // ];
+
+    // register_post_type($post_type_name, $post_type_options);
+
+    $post_type_name = 'menu';
     $post_type_options = [
         'labels' => [
-            'name' => __('Projects'),
-            'singular_name' => __('Project'),
+            'name' => __('Menu'),
+            'singular_name' => __('MenuItem'),
         ],
         'public' => true,
         'has_archive' => true,
-        'menu_icon' => 'dashicons-portfolio',
         'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
-        'rewrite' => ['slug' => 'portfolio'],
+        'rewrite' => ['slug' => 'menu'],
         'show_in_rest' => true,
-
     ];
-}
 
+    register_post_type($post_type_name, $post_type_options);
+}
+add_action('init', 'create_custom_post_type');
