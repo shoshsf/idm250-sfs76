@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Page with Menu */
+/* Template Name: Page with Blog */
 
  get_header(); ?>
 
@@ -21,24 +21,11 @@
         <a href=""></a>
 
     </div>
-
-    <!-- php
-        $args = array(
-            'post_type' => 'menu',
-            'posts_per_page' => 10,
-        );
-        $loop = new WP_Query($args);
-        while ($loop->have_posts()) : $loop->the_post();
-            echo '<div class="entry-content">';
-            the_content();
-            echo '</div>';
-        endwhile;
-    ?> -->
     
     <?php
 
     $query = new WP_Query([
-        'post_type' => 'menu',
+        'post_type' => 'blog',
         'posts_per_page' => 5,
         'order' => 'DESC',
     ]);
@@ -54,6 +41,6 @@
     endif;
 
     ?>
-    <p> This is a Custom Menu template.</p>
+    <p> This is a Custom Blog template.</p>
 
 <?php get_footer(); ?>

@@ -2,7 +2,7 @@
 
 
 <div class="errorContent">
-    <img src="wp-content\themes\CSwirl\dist\imgs\404Page\errorCharacter.png" alt="#" id="errorCharacter">
+    <img src="https://samihashoshi.com/idm250/wp-content/uploads/2024/03/errorCharacter.png" alt="#" id="errorCharacter">
     <h2 class="errorContentText" >"Uh-oh! Hot dog, you've wandered into the land of lost links!"</h2>
 
     <h3 class="homeBtn">
