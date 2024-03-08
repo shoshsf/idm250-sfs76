@@ -174,6 +174,9 @@ a:hover{
     text-decoration: none;
 }
 
+.content{
+    margin: 10px 30px;
+}
 
 /* ---------------- */
 
@@ -266,6 +269,42 @@ a:hover{
     border: 2px solid #3F1300;
     box-shadow: #692E14 0px 0px 5px;
 } */
+
+.cateDiv{
+    margin: 20px 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cate a{
+    background-color: #EBC089;
+    border: 2px solid #692E14;
+    border-radius: 15px;
+    color: #692e14; 
+    font-size: 18px;
+    font-family: 'Baloo', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.9s;
+    padding: 10px 20px;
+
+}
+
+.cate {
+    margin: 20px 20px;
+}
+
+.cate a:hover{
+    background-color: #812e02;
+    cursor:  pointer;
+    color: #EBC089; 
+    text-decoration: none;
+}
 
 
 
@@ -386,6 +425,17 @@ a:hover{
     .blogInner-subtopic ol > li {
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .cate a{
+        background-color: #EBC089;
+        border: 2px solid #692E14;
+        border-radius: 15px;
+        padding: 10px 15px;
+        width: 150px;
+        height: 80px;
+        font-size: 20px;
+        transition: 0.9s;
     }
 
 
@@ -516,7 +566,16 @@ a:hover{
         font-size: 16px;
     }
     
-
+    .cate a{
+        background-color: #EBC089;
+        border: 2px solid #692E14;
+        border-radius: 15px;
+        padding: 10px 15px;
+        width: 130px;
+        height: 80px;
+        font-size: 16px;
+        transition: 0.9s;
+    }
     
     /* ------------------- */
     

@@ -3,12 +3,13 @@
     <!-- <h1>
         php echo get_the_title(); ?>
     </h1> -->
-    <!-- <p> This is a single.php template.</p> -->
+     <!-- <p> This is a single.php template.</p>  -->
 
     
     <div class="blogInner-content">
-    
-       <?php echo get_the_content(); ?> 
+
+        <?php get_template_part('components/content'); ?>
+
     </div>
      
     

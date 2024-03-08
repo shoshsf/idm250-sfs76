@@ -3,8 +3,10 @@
         <?php echo get_the_title(); ?> <!---Gets title from page-->
     </h1>
     
-    <div class="home-content">  <?php echo get_the_content();?> </div>
-    
+    <div class="content">  
+        <?php get_template_part('components/content'); ?>
+     </div>
+
     
     <p> This is a front-page.php template.</p>
 

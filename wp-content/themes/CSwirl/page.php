@@ -4,6 +4,10 @@
     <h1>
         <?php echo get_the_title(); ?> <!---Gets title from page-->
     </h1>
+
+    <div class="content">
+        <?php get_template_part('components/content'); ?>
+    </div>
         
     <p> This is a page.php template.</p>
 
