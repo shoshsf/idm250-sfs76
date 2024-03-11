@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
-<?php 
 
-echo '<h1>' . single_cat_title('', false) . '</h1>';
+<?php 
+ 
+// echo '<h1>' . single_cat_title('', false) . '</h1>';
 
 //output the title and the archive description and posts
 

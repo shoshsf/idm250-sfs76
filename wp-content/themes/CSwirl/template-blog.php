@@ -29,11 +29,13 @@
 
     if ($blogPost->have_posts()) :
         while ($blogPost->have_posts()) : $blogPost->the_post();
+            echo '<a href="' . get_the_permalink() . '">';
             echo '<p>'. get_the_date() . '</p> <br>';
             echo '<h2>' . get_the_title() . '</h2> <br>';
             echo '<p>' . get_the_excerpt() . '</p>';
-            echo '<a href="' . get_the_permalink() . '">Read More</a>';
-            echo '<hr>';        
+            // echo '<a href="' . get_the_permalink() . '">Read More</a>';
+            echo '<hr>'; 
+            echo '</a>';       
         endwhile;
         wp_reset_postdata();
     endif;
