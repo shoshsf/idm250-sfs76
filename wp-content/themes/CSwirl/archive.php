@@ -1,25 +1,42 @@
 <?php get_header(); ?>
 
+<div class="pageContent .blogContent">
+    <div class="cateDiv">
 
-<?php 
- 
-// echo '<h1>' . single_cat_title('', false) . '</h1>';
+        <!-- <div class="cate">
+            <a href="https://idm250.local/blog/ "> <- Back to Main </a>
+        </div> -->
 
-//output the title and the archive description and posts
+        <div class="cate">
+            <a href="https://samihashoshi.com/idm250/blog/ "> <- Back to Main </a>
+        </div> 
+        
+    </div>
 
-if (have_posts()):
-    while(have_posts()) : the_post();
-        echo '<h2>' . get_the_title() . '</h2> <br>';
-        echo '<p>' . get_the_excerpt() . '</p>';
-        echo '<a href="' . get_the_permalink() . '">Read More</a>';
-        echo '<hr>';     
-    endwhile;
+    <?php 
+    
+    // echo '<h1>' . single_cat_title('', false) . '</h1>';
 
-else:
-    echo '<p> No Content Found </p>';
+    //output the title and the archive description and posts
 
-endif;
+        if (have_posts()):
+            while(have_posts()) : the_post();
+                echo '<a class="blogPostDivLink" href="' . get_the_permalink() . '">';
+                echo '<div class="blogPostDiv">';
+                echo '<p class="blogDate blogPostContent">'. get_the_date() . '</p> <br>';
+                echo '<h2 class="blogTitle blogPostContent">' . get_the_title() . '</h2> <br>';
+                echo '<p class="blogDesc blogPostContent">' . get_the_excerpt() . '</p>';
+                echo '</div>';
+                echo '</a>';     
+            endwhile;
 
-?>
+        else:
+            echo '<p> No Content Found </p>';
 
+        endif;
+    ?>
+
+
+
+</div>
 <?php get_footer(); ?>

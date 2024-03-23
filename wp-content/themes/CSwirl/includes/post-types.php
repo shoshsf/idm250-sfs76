@@ -28,17 +28,17 @@ function create_custom_post_type()
     {
         $arg = [
             'labels' => [
-                'name' => 'Menu',
+                'name' => 'Menus',
                 'singular_name' => 'MenuItem',
             ],
             'public' => true,
             'has_archive' => true,
-            'rewrite' => ['slug' => 'menu'],
+            'rewrite' => ['slug' => 'menus'],
             'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
             // 'taxonomies' => ['project-categories'], // Name of custom taxonomy. Only need if you have a custom taxonomy
             'show_in_rest' => true,
         ];
-        $post_type_name = 'menu';
+        $post_type_name = 'menus';
     
         // Register Albums post type
         register_post_type($post_type_name, $arg);

@@ -11,15 +11,14 @@ add_theme_support('post-thumbnails');
 // Add excerpt support to pages
 add_post_type_support('page', 'excerpt');
 
+
+
+
 /**
  * This function is called when the theme is activated. This is where we
  * will add all of our scripts and styles.
  * @return void
  */
-
-
-
-
 
 function theme_scripts_and_styles()
     {
@@ -36,6 +35,10 @@ function theme_scripts_and_styles()
 
 add_action( 'wp_enqueue_scripts' , 'theme_scripts_and_styles'); 
  
+
+
+
+
 /**
  * @link https://codex.wordpress.org/Navigation_Menus
  * @return void
@@ -53,4 +56,15 @@ function register_theme_menus()
 }
 
 add_action('init', 'register_theme_menus');
+
+
+
+function register_theme_sidebars()
+{
+    register_sidebar([
+        'name' => 'Page Sidebar', // Visual
+        'id' => 'page-sidebar', // Unique ID
+    ]);
+}
+add_action('widgets_init', 'register_theme_sidebars');
 

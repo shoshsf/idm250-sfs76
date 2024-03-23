@@ -23,8 +23,31 @@ html {
     padding: 0;
 }
 
+.pageContent{
+    margin: 10px 100px 0 100px;
+}
 
 
+.aboutBanner{
+    border-radius: 45px;
+}
+
+#front-page .wp-block-cover__inner-container{
+    color: #F8EEE4;
+    line-height: 50px;
+    padding: 0px 20px;
+
+}
+
+ a{
+    color: #692E14;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+ a:hover{
+    cursor: pointer;
+}
 
 h1{
     font-family: 'Bilbo', sans-serif;
@@ -79,7 +102,9 @@ p{
     line-height: 24px;
 }
 
-
+.indentText{
+    padding-left: 100px;
+}
 
 header{
     /* background-color: #6A2E14; */
@@ -141,6 +166,44 @@ a:hover{
     text-decoration: underline;
 }
 
+/* Front-Page (Home) */
+
+.weeklyTemptation{
+    border: 0.4px #EBC089 solid;
+    border-radius: 45px;
+    box-shadow: 0px 1px 13px 1px #692d145a;
+    margin-top: 30px;
+}
+
+.wp-block-media-text__media{
+    border-radius: 45px  0px 0px 45px;
+}
+
+.aboutBanner{
+    margin: 30px 0;
+    box-shadow: 0px 1px 13px 1px #692d145a;
+}
+
+
+.featureColumn{
+    background-color: #F2D7B7;
+    margin: 10px 15px;
+    padding: 15px;
+    border-radius: 45px;
+    border: 0.4px #F2D7B7 solid;
+    box-shadow: 0px 1px 15px 1px #692d143a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureColumnText{
+    padding: 0px 10px;
+}
+
+
+/* --------------------- */
+
 /* 404 ERROR STYLES */
 #errorCharacter{
     width: 500px;
@@ -174,113 +237,10 @@ a:hover{
     text-decoration: none;
 }
 
-.content{
-    margin: 10px 30px;
-}
 
-/* ---------------- */
 
-/* Blog Post Inner Page*/
 
-.blogInner-content{
-    margin-top: 45px;
-    margin-bottom: 45px;
-    margin-left: 18%;
-    margin-right: 18%;
-    background-color: #f2d7b767;
-    border-radius: 24px;
-    padding-bottom: 25px;
-    box-shadow: #692E14 0px 0px 10px;
-}
-
-.blogInner-cover{
-    border-radius: 24px 24px 0 0 ;
-}
-.blogInner-coverText{
-    padding: 0 5px;
-}
-
-.blogInner-text{
-    margin: 10px;
-}
-
-.blogInner-content h3, p{
-    padding-left: 20px;
-
-}
-
-.blogInner-content h5{
-    margin: 0;
-}
-
-.blogInner-content a{
-    color: #692E14;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.blogInner-content a:hover{
-    cursor: pointer;
-}
-
-.blogInner-subtopic{
-    margin-left: 50px;
-}
-
-.blogInner-subtopic ul > li{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:  #3F1300;
-    list-style-type: circle;
-    line-height: 24px;
-}
-
-.blogInner-subtopic ol > li {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:  #3F1300;
-    list-style-type: decimal;
-    line-height: 24px;
-}
-
-/* .backToBlogBtn{
-    margin: 10px;
-    width: 200px;
-    height: 60px;
-    background-color: #F2D7B7;
-    border-radius: 15px;
-    border: 1px solid #3F1300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.backToBlogBtn a {
-    text-decoration: none;
-    font-size: 22px;
-    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: #692e14;  
-    padding: 10px;
-
-}
-
-.backToBlogBtn:hover {
-    border: 2px solid #3F1300;
-    box-shadow: #692E14 0px 0px 5px;
-} */
-
-.cateDiv{
-    margin: 20px 100px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-}
-
-.cate a{
+.cravings a{
     background-color: #EBC089;
     border: 2px solid #692E14;
     border-radius: 15px;
@@ -295,17 +255,300 @@ a:hover{
 
 }
 
-.cate {
+.cravings {
     margin: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.cate a:hover{
+.cravings a:hover{
     background-color: #812e02;
     cursor:  pointer;
     color: #EBC089; 
     text-decoration: none;
 }
 
+
+/* ---------------- */
+
+/* Blog Post Page*/
+    .blogPostDiv{
+        border: 1.5px solid #692E14;
+        border-radius: 25px;
+        padding: 20px 45px;
+        margin: 25px 0px;
+    }
+
+    .blogPostDivLink{
+        text-decoration: none;
+    }
+
+    .blogPostDivLink:hover{
+        text-decoration: none;
+    }
+
+    .blogPostDiv:hover {
+        box-shadow: 0px 1px 13px 1px #692d145a;
+        transition: 1s;
+        transform: translateY(-8px);
+    }
+
+    .blogDate, .blogTitle, .blogDesc{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .blogDesc{
+        padding-left: 10px;
+    }
+
+/* ---------------- */
+
+/* Blog Post Inner Page*/
+
+    .blogInner-content{
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 18%;
+        margin-right: 18%;
+        background-color: #f2d7b767;
+        border-radius: 24px;
+        padding-bottom: 25px;
+        box-shadow: #692E14 0px 0px 10px;
+    }
+
+    .blogInner-cover{
+        border-radius: 24px 24px 0 0 ;
+    }
+    .blogInner-coverText{
+        padding: 0 5px;
+    }
+
+    .blogInner-text{
+        margin: 10px;
+    }
+
+    .blogInner-content h3, p{
+        padding-left: 20px;
+
+    }
+
+    .blogInner-content h5{
+        margin: 0;
+    }
+
+    .blogInner-content a{
+        color: #692E14;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .blogInner-content a:hover{
+        cursor: pointer;
+    }
+
+    .blogInner-subtopic{
+        margin-left: 50px;
+    }
+
+    .blogInner-subtopic ul > li{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:  #3F1300;
+        list-style-type: circle;
+        line-height: 24px;
+    }
+
+    .blogInner-subtopic ol > li {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:  #3F1300;
+        list-style-type: decimal;
+        line-height: 24px;
+    }
+
+    /* .backToBlogBtn{
+        margin: 10px;
+        width: 200px;
+        height: 60px;
+        background-color: #F2D7B7;
+        border-radius: 15px;
+        border: 1px solid #3F1300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .backToBlogBtn a {
+        text-decoration: none;
+        font-size: 22px;
+        font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #692e14;  
+        padding: 10px;
+
+    }
+
+    .backToBlogBtn:hover {
+        border: 2px solid #3F1300;
+        box-shadow: #692E14 0px 0px 5px;
+    } */
+
+    .cateDiv{
+        margin: 20px 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cate a{
+        background-color: #EBC089;
+        border: 2px solid #692E14;
+        border-radius: 15px;
+        color: #692e14; 
+        font-size: 18px;
+        font-family: 'Baloo', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.9s;
+        padding: 10px 20px;
+
+    }
+
+    .cate {
+        margin: 20px 20px;
+    }
+
+    .cate a:hover{
+        background-color: #812e02;
+        cursor:  pointer;
+        color: #EBC089; 
+        text-decoration: none;
+    }
+
+/* ------------------- */
+/* About Us Page*/
+    aside{
+        min-width: 250px;
+        height: fit-content;
+        padding-left: 15px;
+
+    }
+
+    .sidebar{
+        border: 1px solid #692E14;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    .sidebarPageContent{
+        display: flex;
+    }
+
+
+    .sidebarPageContent a{
+        color: #692E14;
+        text-decoration: none;
+        padding: 10px 15px 10px 20px;
+        transition: 0.9s;
+    }
+
+    .sidebarPageContent a:hover{
+        color: #EBC089;
+        cursor: pointer;
+        padding: 10px 15px 10px 15px;
+        border-left: 5px #3F1300 solid;
+        background-color: #692d14d1;
+
+    }
+
+/* ------------------- */
+/*     Contact Page    */
+
+    .contactLink a{
+        color: #692E14;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contactLink a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+
+    }
+
+/* ---------------- */
+
+/* Menu  Page*/
+
+    .menuContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* border: 1px solid green; */
+        margin: 0 20px;
+
+    }
+
+    .menuBox{
+        width: 400px;
+        padding: 20px 30px;
+        margin: 60px 30px 10px;
+        /* height: max-content; */
+        border: 0.3px solid #AE674A;
+        border-radius: 25px;
+        background-color: #FFE1C3;
+
+    }
+
+    .menuTitle{
+        text-align: center;
+        margin: 0;
+
+    }
+    
+    .menuContent .menuItemBox{
+        /* border: 1px solid green; */
+
+    }
+
+    .menuContent .menuItemDetail{
+        margin: 0;
+    }
+
+    .menuItemDetail {
+        padding-left: 0;
+    }
+    
+    .menuItemDetailTitle{
+    }
+
+    .menuItemDivider {
+        border: 1px dashed #3F1300;
+        opacity: 30%;
+        margin: 20px 0;
+
+    }
+
+    .menuTypeTitle{
+        padding: 15px 0 15px 0;
+        border-bottom: 2px double #3F1300;
+        border-top: 2px double #3F1300;
+    }
+
+    .menuTitleNote{
+        border-radius: 25px;
+        background-color: #ae664a55;
+        padding: 5px 15px;
+    }
 
 
 /* ------------------- */
@@ -349,6 +592,10 @@ a:hover{
         margin:0;
         padding: 10px;  
     }
+
+    .pageContent{
+        margin: 15px 70px 0 70px;
+    }
      
     #menu-primary-2024-menu, #menu-footer-menu{
         padding: 0; 
@@ -386,6 +633,40 @@ a:hover{
         cursor:  pointer;
         text-decoration: none;
     }
+
+    /* Front-Page (Home) */
+
+    .weeklyTemptation{
+        border: 0.4px #EBC089 solid;
+        border-radius: 45px;
+        box-shadow: 0px 2px 15px 2px #692d145a;
+        margin-top: 30px;
+        display: block;
+
+    }
+
+    .wp-block-media-text__media{
+        border-radius: 45px  45px 0px 0px;
+
+    }
+
+    .aboutBanner{
+        margin: 15px 0;
+    }
+
+    .featureSection{
+        display: flex;
+        flex-direction: column;
+       }
+
+    .featureColumn{
+        background-color: #F2D7B7;
+        margin: 15px 5px 10px;
+        padding: 15px;
+        border-radius: 45px;
+    }
+    /* --------------------- */
+
     /* 404 ERROR STYLES */
     #errorCharacter{
         width: 500px;
@@ -438,10 +719,130 @@ a:hover{
         transition: 0.9s;
     }
 
+    .cateDiv{
+        margin: 20px 10px;
+        padding: 0px;
+    }
+
+        
+    /* About Us Page*/
+    aside{
+        min-width: 270px;
+        height: fit-content;
+        margin-left: 15px;
+
+    }
+
+    .sidebar{
+        border: 1px solid #692E14;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+
+    }
+
+
+
+    .sidebarPageContent a{
+        color: #692E14;
+        text-decoration: none;
+        padding: 10px 15px 10px 20px;
+        transition: 0.9s;
+    }
+
+    .sidebarPageContent a:hover{
+        color: #EBC089;
+        cursor: pointer;
+        padding: 10px 15px 10px 15px;
+        border-left: 5px #3F1300 solid;
+        background-color: #692d14d1;
+
+    }
+    .aboutTopSection{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .aboutTopSection .wp-block-media-text__content{
+        padding: 0;
+    }
+    
+    /* ------------------- */
+
+    /* Menu  Page*/
+
+    .menuContent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* border: 1px solid green; */
+        margin: 0;
+
+    }
+
+    .menuBox{
+        width: 330px;
+        padding: 30px;
+        margin: 30px;
+        /* height: max-content; */
+        border: 0.3px solid #AE674A;
+        border-radius: 25px;
+        background-color: #FFE1C3;
+
+    }
+
+    .menuTitle{
+        text-align: center;
+        margin: 0;
+
+    }
+    
+    .menuContent .menuItemBox{
+        /* border: 1px solid green; */
+
+    }
+
+    .menuContent .menuItemDetail{
+        margin: 0;
+    }
+
+    .menuItemDetail {
+        padding-left: 0;
+        /* border: 1px solid green; */
+        text-align: left;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+    
+    .menuItemDetailTitle{
+    }
+
+    .menuItemDivider {
+        border: 1px dashed #3F1300;
+        opacity: 30%;
+        margin: 20px 0;
+
+    }
+
+    .menuTypeTitle{
+        padding: 15px 0 15px 0;
+        border-bottom: 2px double #3F1300;
+        border-top: 2px double #3F1300;
+    }
+
+    .menuTitleNote{
+        border-radius: 25px;
+        background-color: #ae664a55;
+        padding: 5px 15px;
+    }
+
 
     /* ------------------- */
-        
-  }
+
+}
+
   
 @media only screen and (min-width: 300px) and (max-width: 630px) {
     
@@ -482,6 +883,11 @@ a:hover{
         margin:0;
         padding: 10px;  
     }
+
+    .pageContent{
+        margin: 15px 30px 0 30px;
+    }
+    
      
     #menu-primary-2024-menu, #menu-footer-menu{
         padding: 0; 
@@ -519,6 +925,20 @@ a:hover{
         cursor:  pointer;
         text-decoration: none;
     }
+
+    /* Front-Page (Home) */
+
+    .weeklyTemptation{
+        border: 1px #812e02 solid;
+        border-radius: 45px;
+        display: block;
+    }
+
+    .wp-block-media-text__media{
+        border-radius: 45px 45px 0px 0px ;
+    }
+
+    
     /* 404 ERROR STYLES */
     #errorCharacter{
         width: 90%;
@@ -565,6 +985,12 @@ a:hover{
     .blogInner-subtopic ol > li {
         font-size: 16px;
     }
+
+    .cateDiv{
+        margin: 20px 10px;
+        padding: 0px;
+    }
+    
     
     .cate a{
         background-color: #EBC089;
@@ -578,5 +1004,58 @@ a:hover{
     }
     
     /* ------------------- */
+
+    /* About Us Page*/
+        aside{
+            min-width: 270px;
+            height: fit-content;
+            
+        }
+
+        .sidebar{
+            border: 1px solid #692E14;
+            border-radius: 25px;
+            margin-bottom: 20px;
+        }
+
+        .sidebarPageContent{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        
+        .sidebarPageContent a{
+            color: #692E14;
+            text-decoration: none;
+            padding: 10px 15px 10px 20px;
+            transition: 0.9s;
+        }
+
+        .sidebarPageContent a:hover{
+            color: #EBC089;
+            cursor: pointer;
+            padding: 10px 15px 10px 15px;
+            border-left: 5px #3F1300 solid;
+            background-color: #692d14d1;
+
+        }
+        
+        .aboutTopSection{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .aboutTopSection .wp-block-media-text__content{
+            padding: 0;
+        }
+
+        .menuItemDetail {
+            padding-left: 0;
+            /* border: 1px solid green; */
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 5px;
     
+        }
+
   }

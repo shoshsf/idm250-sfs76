@@ -9,24 +9,19 @@
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/#creating-custom-page-templates-for-global-use
  *
 */
-get_header(); ?>
+  get_header(); ?>
     <h1>
         <?php echo get_the_title(); ?> <!---Gets title from page-->
     </h1>
 
-    <p> This is a Custom Sidebar template.</p>
-    
-  <div class="content">
-    <?php get_template_part('components/content'); ?>
-  </div>
-  
-  <aside class="sidebar w-1/3">
-    <?php
-    // output the sidebar main_sidebar
-    if (is_active_sidebar('main_sidebar')) :
-        dynamic_sidebar('main_sidebar');
-    endif;
-?>
-  </aside>
 
+  <div class="pageContent sidebarPageContent">
+    
+    <div class="content">
+      <?php get_template_part('components/content'); ?>
+    </div>
+    <aside class="sidebar">
+      <?php get_template_part('components/sidebar'); ?>
+    </aside>
+  </div>
   <?php get_footer(); ?>
